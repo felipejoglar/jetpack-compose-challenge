@@ -1,4 +1,4 @@
-package com.fjoglar.composechallenge.bloom.theme
+package com.fjoglar.composechallenge.bloom.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
