@@ -22,7 +22,7 @@ The resources & design mocks:
 
 This project will contain three [application modules](https://developer.android.com/studio/projects#ApplicationModules):
 
-1- [Bloom](https://github.com/fjoglar/jetpack-compose-challenge/bloom)
+1- [Bloom](https://github.com/fjoglar/jetpack-compose-challenge/tree/main/bloom)
 
 # License
 ```
