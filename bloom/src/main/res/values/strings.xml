@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Bloom</string>
+
+    <!--  COMMON  -->
+    <string name="create_account">Create account</string>
+    <string name="log_in">Log in</string>
+
+    <!--  WELCOME SCREEN  -->
+    <string name="welcome_subtitle_label">Beautiful home garden solutions</string>
 </resources>
