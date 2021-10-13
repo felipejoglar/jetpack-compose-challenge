@@ -10,6 +10,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalUriHandler
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.TextLayoutResult
@@ -18,6 +19,7 @@ import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
+import com.fjoglar.composechallenge.bloom.R
 import com.fjoglar.composechallenge.bloom.ui.theme.BloomTheme
 
 private const val URL_TAG = "URL"
@@ -99,10 +101,10 @@ private fun UrlClickableTextPreview() {
     BloomTheme {
         Surface {
             UrlClickableText(
-                text = "By clicking below, you agree to our Terms of Use and consent to our Privacy Policy.",
+                text = stringResource(id = R.string.log_in_legal_terms),
                 urls = mapOf(
-                    "Terms of Use" to "http://google.com",
-                    "Privacy Policy" to "http://google.com",
+                    stringResource(id = R.string.log_in_terms_of_use) to "http://google.com",
+                    stringResource(id = R.string.log_in_privacy_policy) to "http://google.com",
                 ),
                 textAlign = TextAlign.Center
             )
