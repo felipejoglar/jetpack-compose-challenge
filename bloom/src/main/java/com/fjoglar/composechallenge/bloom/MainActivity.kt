@@ -3,7 +3,7 @@ package com.fjoglar.composechallenge.bloom
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.fjoglar.composechallenge.bloom.ui.screens.WelcomeScreen
+import com.fjoglar.composechallenge.bloom.ui.screens.LoginScreen
 import com.fjoglar.composechallenge.bloom.ui.theme.BloomTheme
 
 class MainActivity : ComponentActivity() {
@@ -11,7 +11,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             BloomTheme {
-                WelcomeScreen()
+                LoginScreen()
             }
         }
     }

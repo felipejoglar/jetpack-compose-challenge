@@ -7,4 +7,12 @@
 
     <!--  WELCOME SCREEN  -->
     <string name="welcome_subtitle_label">Beautiful home garden solutions</string>
+
+    <!--  LOG IN SCREEN  -->
+    <string name="log_in_title">Log in with email</string>
+    <string name="log_in_email_address_label">Email address</string>
+    <string name="log_in_password_label">Password (8+ characters)</string>
+    <string name="log_in_legal_terms">By clicking below, you agree to our Terms of Use and consent to our Privacy Policy.</string>
+    <string name="log_in_terms_of_use">Terms of Use</string>
+    <string name="log_in_privacy_policy">Privacy Policy</string>
 </resources>
