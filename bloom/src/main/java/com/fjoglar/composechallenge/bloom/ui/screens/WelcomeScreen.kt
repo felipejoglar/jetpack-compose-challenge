@@ -92,10 +92,14 @@ private fun BackgroundImage() {
 
 @Preview(
     name = "Day Mode",
+    widthDp = 360,
+    heightDp = 640,
     uiMode = Configuration.UI_MODE_NIGHT_NO,
 )
 @Preview(
     name = "Night Mode",
+    widthDp = 360,
+    heightDp = 640,
     uiMode = Configuration.UI_MODE_NIGHT_YES,
 )
 @Composable
