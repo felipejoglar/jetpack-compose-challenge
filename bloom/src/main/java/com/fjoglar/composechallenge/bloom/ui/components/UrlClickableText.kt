@@ -57,7 +57,7 @@ fun UrlClickableText(
     )
 }
 
-fun createAnnotatedText(
+private fun createAnnotatedText(
     text: String,
     actions: Map<String, String>
 ): AnnotatedString =
