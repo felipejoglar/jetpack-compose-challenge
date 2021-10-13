@@ -26,20 +26,20 @@ private const val URL_TAG = "URL"
 fun UrlClickableText(
     text: String,
     modifier: Modifier = Modifier,
-    actions: Map<String, String> = mapOf(),
+    urls: Map<String, String> = mapOf(),
     textAlign: TextAlign? = null,
     style: TextStyle = TextStyle.Default,
 ) {
     val layoutResult = remember { mutableStateOf<TextLayoutResult?>(null) }
 
     val uriHandler = LocalUriHandler.current
-    val annotatedText = createAnnotatedText(text, actions)
+    val annotatedText = createAnnotatedText(text, urls)
 
     Text(
         text = annotatedText,
         style = style,
         textAlign = textAlign,
-        modifier = modifier.pointerInput(actions.keys) {
+        modifier = modifier.pointerInput(urls.keys) {
             detectTapGestures { offset ->
                 layoutResult.value?.let { textLayoutResult ->
                     val position = textLayoutResult.getOffsetForPosition(offset)
@@ -100,7 +100,7 @@ private fun UrlClickableTextPreview() {
         Surface {
             UrlClickableText(
                 text = "By clicking below, you agree to our Terms of Use and consent to our Privacy Policy.",
-                actions = mapOf(
+                urls = mapOf(
                     "Terms of Use" to "http://google.com",
                     "Privacy Policy" to "http://google.com",
                 ),

@@ -79,7 +79,7 @@ fun LoginScreen() {
             )
             UrlClickableText(
                 text = stringResource(R.string.log_in_legal_terms),
-                actions = mapOf(
+                urls = mapOf(
                     stringResource(R.string.log_in_terms_of_use) to "http://google.com",
                     stringResource(R.string.log_in_privacy_policy) to "http://github.com",
                 ),
