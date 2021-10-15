@@ -15,4 +15,10 @@
     <string name="log_in_legal_terms">By clicking below, you agree to our Terms of Use and consent to our Privacy Policy.</string>
     <string name="log_in_terms_of_use">Terms of Use</string>
     <string name="log_in_privacy_policy">Privacy Policy</string>
+
+    <!--  HOME SCREEN  -->
+    <string name="home_menu_home">Home</string>
+    <string name="home_menu_favorites">Favorites</string>
+    <string name="home_menu_profile">Profile</string>
+    <string name="home_menu_cart">Cart</string>
 </resources>
