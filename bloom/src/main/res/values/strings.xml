@@ -21,4 +21,9 @@
     <string name="home_menu_favorites">Favorites</string>
     <string name="home_menu_profile">Profile</string>
     <string name="home_menu_cart">Cart</string>
+    <string name="home_search_label">Search</string>
+    <string name="home_browse_themes_section_title">Browse themes</string>
+    <string name="home_themes_list_content_description">%1s image</string>
+    <string name="home_home_garden_section_title">Design your home garden</string>
+    <string name="home_home_garden_section_filter">Filter</string>
 </resources>

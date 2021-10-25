@@ -2,10 +2,12 @@ package com.fjoglar.composechallenge.bloom.ui.components
 
 import android.content.res.Configuration
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.OutlinedTextField
+import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.material.TextFieldDefaults
 import androidx.compose.runtime.Composable
@@ -21,9 +23,10 @@ fun BloomTextField(
     onValueChange: (String) -> Unit,
     placeholder: String,
     modifier: Modifier = Modifier,
+    leadingIcon: @Composable (() -> Unit)? = null,
     keyboardOptions: KeyboardOptions = KeyboardOptions.Default,
     keyboardActions: KeyboardActions = KeyboardActions.Default,
-    visualTransformation: VisualTransformation = VisualTransformation.None
+    visualTransformation: VisualTransformation = VisualTransformation.None,
 ) {
     val focusedColor = MaterialTheme.colors.onSurface
 
@@ -33,6 +36,7 @@ fun BloomTextField(
         placeholder = { Text(placeholder) },
         textStyle = MaterialTheme.typography.body1,
         singleLine = true,
+        leadingIcon = leadingIcon,
         keyboardOptions = keyboardOptions,
         keyboardActions = keyboardActions,
         visualTransformation = visualTransformation,
@@ -59,10 +63,16 @@ fun BloomTextField(
 @Composable
 private fun BloomTextFieldPreview() {
     BloomTheme {
-        BloomTextField(
-            value = "",
-            onValueChange = {},
-            placeholder = "BloomTextField",
-        )
+        Surface(
+            color = MaterialTheme.colors.background
+        ) {
+            BloomTextField(
+                value = "",
+                onValueChange = {},
+                placeholder = "BloomTextField",
+                modifier = Modifier
+                    .padding(16.dp)
+            )
+        }
     }
 }

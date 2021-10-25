@@ -56,8 +56,8 @@ fun WelcomeScreen() {
                 textAlign = TextAlign.Center,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(horizontal = 8.dp)
                     .paddingFromBaseline(top = 32.dp)
+                    .padding(horizontal = 16.dp)
             )
             VerticalSpacer(height = 40.dp)
             BloomButton(

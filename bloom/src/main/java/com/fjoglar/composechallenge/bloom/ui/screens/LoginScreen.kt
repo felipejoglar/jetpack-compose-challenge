@@ -96,6 +96,7 @@ fun LoginScreen() {
                     .fillMaxWidth()
                     .padding(horizontal = 16.dp)
             )
+            VerticalSpacer(height = 16.dp)
         }
     }
 }
