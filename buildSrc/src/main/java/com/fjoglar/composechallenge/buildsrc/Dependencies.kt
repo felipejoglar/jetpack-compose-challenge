@@ -10,6 +10,13 @@ object Libs {
 
     object Google {
         const val material = "com.google.android.material:material:1.4.0"
+
+        object Accompanist {
+            private const val version = "0.20.0"
+
+            const val systemUiController =
+                "com.google.accompanist:accompanist-systemuicontroller:$version"
+        }
     }
 
     object AndroidX {
