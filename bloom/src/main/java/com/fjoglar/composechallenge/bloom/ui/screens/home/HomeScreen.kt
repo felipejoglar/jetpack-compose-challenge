@@ -22,7 +22,6 @@ import androidx.compose.material.Icon
 import androidx.compose.material.IconButton
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
-import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.FilterList
@@ -42,34 +41,34 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.fjoglar.composechallenge.bloom.R
 import com.fjoglar.composechallenge.bloom.data.Repository
+import com.fjoglar.composechallenge.bloom.ui.components.BloomTemplate
 import com.fjoglar.composechallenge.bloom.ui.components.BloomTextField
 import com.fjoglar.composechallenge.bloom.ui.components.VerticalSpacer
+import com.fjoglar.composechallenge.bloom.ui.screens.home.components.PlantItem
+import com.fjoglar.composechallenge.bloom.ui.screens.home.components.ThemeItem
 import com.fjoglar.composechallenge.bloom.ui.screens.home.model.getMenuItems
 import com.fjoglar.composechallenge.bloom.ui.screens.home.model.toHomeGardenItem
-import com.fjoglar.composechallenge.bloom.ui.theme.BloomTheme
 
 @Composable
 fun HomeScreen() {
     Scaffold(
         bottomBar = { BloomBottomNavigation() }
     ) { paddingValues ->
-        Surface(
-            color = MaterialTheme.colors.background,
+        Column(
             modifier = Modifier
                 .fillMaxSize()
                 .verticalScroll(rememberScrollState())
-                .padding(paddingValues)
+                .padding(paddingValues),
         ) {
-            Column {
-                VerticalSpacer(height = 40.dp)
-                SearchTextField(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(horizontal = 16.dp)
-                )
-                BrowseThemesSection()
-                HomeGardenSection()
-            }
+            VerticalSpacer(height = 40.dp)
+            SearchTextField(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp)
+            )
+            BrowseThemesSection()
+            HomeGardenSection()
+            VerticalSpacer(height = 16.dp)
         }
     }
 }
@@ -217,7 +216,7 @@ fun HomeGardenList(
 )
 @Composable
 private fun HomeScreenPreview() {
-    BloomTheme {
+    BloomTemplate {
         HomeScreen()
     }
 }
