@@ -38,6 +38,10 @@ object Libs {
             const val toolingPreview = "androidx.compose.ui:ui-tooling-preview:$version"
             const val tooling = "androidx.compose.ui:ui-tooling:$version"
         }
+
+        object Navigation {
+            const val compose = "androidx.navigation:navigation-compose:2.4.0-alpha10"
+        }
     }
 
 

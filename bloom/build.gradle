@@ -70,6 +70,8 @@ dependencies {
     implementation Libs.AndroidX.Compose.materialIconsExtended
     implementation Libs.AndroidX.Compose.toolingPreview
 
+    implementation Libs.AndroidX.Navigation.compose
+
     implementation Libs.AndroidX.Activity.activityCompose
 
     debugImplementation Libs.AndroidX.Compose.tooling
