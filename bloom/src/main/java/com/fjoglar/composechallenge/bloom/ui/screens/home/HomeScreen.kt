@@ -74,7 +74,7 @@ fun HomeScreen() {
 }
 
 @Composable
-fun BloomBottomNavigation() {
+private fun BloomBottomNavigation() {
     var selectedItem by remember { mutableStateOf(0) }
     val items = getMenuItems()
 
@@ -125,7 +125,7 @@ private fun BrowseThemesSection() {
 }
 
 @Composable
-fun ThemesList(
+private fun ThemesList(
     modifier: Modifier = Modifier,
 ) {
     val themes by remember { mutableStateOf(Repository.getThemes()) }
@@ -176,7 +176,7 @@ private fun HomeGardenSection() {
 }
 
 @Composable
-fun HomeGardenList(
+private fun HomeGardenList(
     modifier: Modifier = Modifier,
 ) {
     var homeGardenItems by remember {
