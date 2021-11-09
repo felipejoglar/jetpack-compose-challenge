@@ -1,4 +1,4 @@
-package com.fjoglar.composechallenge.bloom.ui.screens.home
+package com.fjoglar.composechallenge.bloom.ui.screens.home.components
 
 import android.content.res.Configuration
 import androidx.compose.foundation.Image

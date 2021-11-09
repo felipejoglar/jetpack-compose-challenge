@@ -10,6 +10,13 @@ object Libs {
 
     object Google {
         const val material = "com.google.android.material:material:1.4.0"
+
+        object Accompanist {
+            private const val version = "0.20.0"
+
+            const val systemUiController =
+                "com.google.accompanist:accompanist-systemuicontroller:$version"
+        }
     }
 
     object AndroidX {
@@ -30,6 +37,10 @@ object Libs {
 
             const val toolingPreview = "androidx.compose.ui:ui-tooling-preview:$version"
             const val tooling = "androidx.compose.ui:ui-tooling:$version"
+        }
+
+        object Navigation {
+            const val compose = "androidx.navigation:navigation-compose:2.4.0-alpha10"
         }
     }
 

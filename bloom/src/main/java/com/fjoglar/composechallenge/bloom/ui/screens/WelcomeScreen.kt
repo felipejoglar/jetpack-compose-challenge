@@ -25,12 +25,14 @@ import androidx.compose.ui.unit.dp
 import com.fjoglar.composechallenge.bloom.R
 import com.fjoglar.composechallenge.bloom.ui.components.BloomButton
 import com.fjoglar.composechallenge.bloom.ui.components.BloomLogoImage
+import com.fjoglar.composechallenge.bloom.ui.components.BloomTemplate
 import com.fjoglar.composechallenge.bloom.ui.components.BloomTextButton
 import com.fjoglar.composechallenge.bloom.ui.components.VerticalSpacer
-import com.fjoglar.composechallenge.bloom.ui.theme.BloomTheme
 
 @Composable
-fun WelcomeScreen() {
+fun WelcomeScreen(
+    onLoginClick: () -> Unit = { },
+) {
     Surface(
         color = MaterialTheme.colors.primary,
         modifier = Modifier
@@ -70,7 +72,7 @@ fun WelcomeScreen() {
             VerticalSpacer(height = 8.dp)
             BloomTextButton(
                 text = stringResource(R.string.log_in),
-                onClick = {},
+                onClick = onLoginClick,
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(horizontal = 16.dp)
@@ -104,7 +106,7 @@ private fun BackgroundImage() {
 )
 @Composable
 private fun WelcomeScreenPreview() {
-    BloomTheme {
+    BloomTemplate {
         WelcomeScreen()
     }
 }

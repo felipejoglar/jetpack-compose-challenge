@@ -11,7 +11,6 @@ import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -31,73 +30,72 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.fjoglar.composechallenge.bloom.R
 import com.fjoglar.composechallenge.bloom.ui.components.BloomButton
+import com.fjoglar.composechallenge.bloom.ui.components.BloomTemplate
 import com.fjoglar.composechallenge.bloom.ui.components.BloomTextField
 import com.fjoglar.composechallenge.bloom.ui.components.UrlClickableText
 import com.fjoglar.composechallenge.bloom.ui.components.VerticalSpacer
-import com.fjoglar.composechallenge.bloom.ui.theme.BloomTheme
 
 @Composable
-fun LoginScreen() {
+fun LoginScreen(
+    onLoginClick: () -> Unit = { },
+) {
     var email by rememberSaveable { mutableStateOf("") }
     var password by rememberSaveable { mutableStateOf("") }
 
     val focusRequester = FocusRequester()
-    val onLoginClick: () -> Unit = { }
 
-    Surface(
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier
             .fillMaxSize()
             .verticalScroll(rememberScrollState()),
-    ) {
-        Column(
-            horizontalAlignment = Alignment.CenterHorizontally
+
         ) {
-            Text(
-                text = stringResource(R.string.log_in_title),
-                style = MaterialTheme.typography.h1,
-                modifier = Modifier
-                    .padding(horizontal = 16.dp)
-                    .paddingFromBaseline(top = 184.dp, bottom = 16.dp)
-            )
-            EmailTextField(
-                value = email,
-                onValueChange = { email = it },
-                keyboardAction = { focusRequester.requestFocus() },
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(horizontal = 16.dp)
-            )
-            VerticalSpacer(height = 8.dp)
-            PasswordTextField(
-                value = password,
-                onValueChange = { password = it },
-                keyboardAction = onLoginClick,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .focusRequester(focusRequester)
-                    .padding(horizontal = 16.dp)
-            )
-            UrlClickableText(
-                text = stringResource(R.string.log_in_legal_terms),
-                urls = mapOf(
-                    stringResource(R.string.log_in_terms_of_use) to "http://google.com",
-                    stringResource(R.string.log_in_privacy_policy) to "http://github.com",
-                ),
-                textAlign = TextAlign.Center,
-                style = MaterialTheme.typography.body2,
-                modifier = Modifier
-                    .paddingFromBaseline(top = 24.dp, bottom = 16.dp)
-                    .padding(horizontal = 16.dp)
-            )
-            BloomButton(
-                text = stringResource(id = R.string.log_in),
-                onClick = onLoginClick,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(horizontal = 16.dp)
-            )
-            VerticalSpacer(height = 16.dp)
-        }
+        Text(
+            text = stringResource(R.string.log_in_title),
+            style = MaterialTheme.typography.h1,
+            modifier = Modifier
+                .padding(horizontal = 16.dp)
+                .paddingFromBaseline(top = 184.dp, bottom = 16.dp)
+        )
+        EmailTextField(
+            value = email,
+            onValueChange = { email = it },
+            keyboardAction = { focusRequester.requestFocus() },
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp)
+        )
+        VerticalSpacer(height = 8.dp)
+        PasswordTextField(
+            value = password,
+            onValueChange = { password = it },
+            keyboardAction = onLoginClick,
+            modifier = Modifier
+                .fillMaxWidth()
+                .focusRequester(focusRequester)
+                .padding(horizontal = 16.dp)
+        )
+        UrlClickableText(
+            text = stringResource(R.string.log_in_legal_terms),
+            urls = mapOf(
+                stringResource(R.string.log_in_terms_of_use) to "http://google.com",
+                stringResource(R.string.log_in_privacy_policy) to "http://github.com",
+            ),
+            textAlign = TextAlign.Center,
+            style = MaterialTheme.typography.body2,
+            modifier = Modifier
+                .paddingFromBaseline(top = 24.dp, bottom = 16.dp)
+                .padding(horizontal = 16.dp)
+        )
+        BloomButton(
+            text = stringResource(id = R.string.log_in),
+            onClick = onLoginClick,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp)
+        )
+        VerticalSpacer(height = 16.dp)
     }
 }
 
@@ -160,7 +158,7 @@ private fun PasswordTextField(
 )
 @Composable
 private fun LoginScreenPreview() {
-    BloomTheme {
+    BloomTemplate {
         LoginScreen()
     }
 }
