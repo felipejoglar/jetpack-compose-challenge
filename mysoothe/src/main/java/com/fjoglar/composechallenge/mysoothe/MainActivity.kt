@@ -3,36 +3,16 @@ package com.fjoglar.composechallenge.mysoothe
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.tooling.preview.Preview
-import com.fjoglar.composechallenge.mysoothe.ui.theme.MySootheTheme
+import com.fjoglar.composechallenge.mysoothe.ui.screens.WelcomeScreen
+import com.fjoglar.composechallenge.mysoothe.ui.components.MySootheTemplate
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MySootheTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(color = MaterialTheme.colors.background) {
-                    Greeting("Android")
-                }
+            MySootheTemplate {
+                WelcomeScreen()
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    MySootheTheme() {
-        Greeting("Android")
     }
 }
