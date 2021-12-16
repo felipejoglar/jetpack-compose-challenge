@@ -1,4 +1,4 @@
-# <img src="https://github.com/fjoglar/jetpack-compose-challenge/tree/main/assets/jetpack-compose-logo.png" width="80" height="80"> Jetpack Compose Challenge
+# <img src="https://raw.githubusercontent.com/fjoglar/jetpack-compose-challenge/fjoglar/docs/update_readme/assets/jetpack-compose-logo.png" width="80" height="80"> Jetpack Compose Challenge
 
 Jetpack Compose Android Challenge repository.
 
