@@ -1,4 +1,4 @@
-# Jetpack Compose Challenge
+# <img src="https://raw.githubusercontent.com/fjoglar/jetpack-compose-challenge/fjoglar/docs/update_readme/assets/jetpack-compose-logo.png" width="40" height="40"> Jetpack Compose Challenge
 
 Jetpack Compose Android Challenge repository.
 
@@ -22,7 +22,8 @@ The resources & design mocks:
 
 This project will contain three [application modules](https://developer.android.com/studio/projects#ApplicationModules):
 
-1- [Bloom](https://github.com/fjoglar/jetpack-compose-challenge/tree/main/bloom)
+1. [Bloom](https://github.com/fjoglar/jetpack-compose-challenge/tree/main/bloom)
+2. [MySoothe](https://github.com/fjoglar/jetpack-compose-challenge/tree/main/mysoothe)
 
 # License
 ```
