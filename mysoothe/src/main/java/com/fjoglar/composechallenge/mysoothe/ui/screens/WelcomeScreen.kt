@@ -2,7 +2,10 @@ package com.fjoglar.composechallenge.mysoothe.ui.screens
 
 import android.content.res.Configuration
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.MaterialTheme
@@ -11,6 +14,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.fjoglar.composechallenge.mysoothe.R
@@ -35,12 +39,12 @@ fun WelcomeScreen() {
             )
             VerticalSpacer(height = 32.dp)
             MySootheButton(
-                text = "Sign up",
+                text = stringResource(id = R.string.sign_up),
                 modifier = Modifier.padding(horizontal = 16.dp)
             )
             VerticalSpacer(height = 8.dp)
             MySootheButton(
-                text = "Log in",
+                text = stringResource(id = R.string.log_in),
                 color = MaterialTheme.colors.secondary,
                 modifier = Modifier.padding(horizontal = 16.dp)
             )
@@ -53,7 +57,9 @@ private fun BackgroundImage() {
     Image(
         painter = painterResource(id = R.drawable.welcome_background),
         contentDescription = null,
-        contentScale = ContentScale.FillBounds
+        contentScale = ContentScale.Crop,
+        modifier = Modifier
+            .fillMaxSize()
     )
 }
 

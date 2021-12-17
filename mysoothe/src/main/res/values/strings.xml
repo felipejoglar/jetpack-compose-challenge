@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">My Soothe</string>
+
+    <!--  COMMON  -->
+    <string name="sign_up">Sign up</string>
+    <string name="log_in">Log in</string>
+
+    <!--  LOG IN SCREEN  -->
+    <string name="log_in_email_address_label">Email address</string>
+    <string name="log_in_password_label">Password</string>
+    <string name="log_in_no_account_label">Don\'t have an account? Sign up</string>
 </resources>
