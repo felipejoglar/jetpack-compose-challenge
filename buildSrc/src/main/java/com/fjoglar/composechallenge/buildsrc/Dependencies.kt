@@ -4,7 +4,7 @@ object Libs {
     const val androidGradlePlugin = "com.android.tools.build:gradle:7.0.2"
 
     object Kotlin {
-        private const val version = "1.5.30"
+        private const val version = "1.6.10"
         const val gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$version"
     }
 
@@ -12,7 +12,7 @@ object Libs {
         const val material = "com.google.android.material:material:1.4.0"
 
         object Accompanist {
-            private const val version = "0.20.3"
+            private const val version = "0.24.4-alpha"
 
             const val systemUiController =
                 "com.google.accompanist:accompanist-systemuicontroller:$version"
@@ -28,7 +28,7 @@ object Libs {
         }
 
         object Compose {
-            const val version = "1.0.3"
+            private const val version = "1.2.0-alpha05"
 
             const val ui = "androidx.compose.ui:ui:$version"
             const val material = "androidx.compose.material:material:$version"
@@ -43,7 +43,6 @@ object Libs {
             const val compose = "androidx.navigation:navigation-compose:2.4.0-alpha10"
         }
     }
-
 
     object Coil {
         const val compose = "io.coil-kt:coil-compose:1.4.0"
