@@ -1,14 +1,23 @@
 # <img src="https://raw.githubusercontent.com/fjoglar/jetpack-compose-challenge/main/assets/jetpack-compose-logo.png" width="40" height="40"> Jetpack Compose Challenge
 
+[![CI](https://github.com/felipejoglar/jetpack-compose-challenge/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/felipejoglar/jetpack-compose-challenge/actions/workflows/ci.yml)
+
 Jetpack Compose Android Challenge repository.
 
-This is meant to be a learning playground project for [Jetpack Compose](https://developer.android.com/jetpack/compose).
+This is meant to be a learning playground project
+for [Jetpack Compose](https://developer.android.com/jetpack/compose).
 
-It's based on the third Compose [#AndroidDevChallenge](https://developer.android.com/dev-challenge), which was the [Speed Round](https://android-developers.googleblog.com/2021/03/android-dev-challenge-3.html) and it is focused in the UI part of Compose. Leaving behind all about [Architecture](https://developer.android.com/jetpack/compose/architecture) and [State Management](https://developer.android.com/jetpack/compose/state).
+It's based on the third Compose [#AndroidDevChallenge](https://developer.android.com/dev-challenge),
+which was
+the [Speed Round](https://android-developers.googleblog.com/2021/03/android-dev-challenge-3.html)
+and it is focused in the UI part of Compose. Leaving behind all
+about [Architecture](https://developer.android.com/jetpack/compose/architecture)
+and [State Management](https://developer.android.com/jetpack/compose/state).
 
 # The challenge
 
-All information about the challenge and the designs can be found [here](https://github.com/android/android-dev-challenge-compose).
+All information about the challenge and the designs can be
+found [here](https://github.com/android/android-dev-challenge-compose).
 
 ![dev_challenge_speed](https://user-images.githubusercontent.com/2998890/117301782-e536a300-ae72-11eb-8f42-a7a12151ee5e.png)
 
