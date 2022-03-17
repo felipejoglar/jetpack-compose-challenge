@@ -12,7 +12,7 @@ object Libs {
         const val material = "com.google.android.material:material:1.4.0"
 
         object Accompanist {
-            private const val version = "0.20.0"
+            private const val version = "0.20.3"
 
             const val systemUiController =
                 "com.google.accompanist:accompanist-systemuicontroller:$version"

@@ -14,16 +14,16 @@ import com.google.accompanist.systemuicontroller.rememberSystemUiController
 fun BloomTemplate(
     content: @Composable () -> Unit,
 ) {
-    val systemUiController = rememberSystemUiController()
-
-    systemUiController.setStatusBarColor(
-        color = Color.Transparent,
-        darkIcons = MaterialTheme.colors.isLight
-    )
-
     BloomTheme {
+        val systemUiController = rememberSystemUiController()
+
+        systemUiController.setStatusBarColor(
+            color = Color.Transparent,
+            darkIcons = MaterialTheme.colors.isLight
+        )
+
         Surface(
-            color = MaterialTheme.colors.background
+            color = MaterialTheme.colors.background,
         ) {
             content()
         }
