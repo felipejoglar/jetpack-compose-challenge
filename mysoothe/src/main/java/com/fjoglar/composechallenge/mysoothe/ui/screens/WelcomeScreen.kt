@@ -25,13 +25,13 @@ import com.fjoglar.composechallenge.mysoothe.ui.components.VerticalSpacer
 
 @Composable
 fun WelcomeScreen() {
+    BackgroundImage()
     Box(
         contentAlignment = Alignment.Center,
         modifier = Modifier
             .fillMaxSize()
             .verticalScroll(rememberScrollState())
     ) {
-        BackgroundImage()
         Column {
             MySootheLogoImage(
                 modifier = Modifier
