@@ -1,22 +1,34 @@
 package com.fjoglar.composechallenge.mysoothe.ui.components
 
 import android.content.res.Configuration
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import com.fjoglar.composechallenge.mysoothe.ui.screens.WelcomeScreen
 import com.fjoglar.composechallenge.mysoothe.ui.theme.MySootheTheme
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 @Composable
 fun MySootheTemplate(
     content: @Composable () -> Unit
 ) {
     MySootheTheme {
+        val systemUiController = rememberSystemUiController()
+
+        systemUiController.setStatusBarColor(
+            color = Color.Transparent,
+            darkIcons = MaterialTheme.colors.isLight
+        )
+
         Surface(
-            color = MaterialTheme.colors.background
+            color = MaterialTheme.colors.background,
+            modifier = Modifier.navigationBarsPadding()
         ) {
-           content()
+            content()
         }
     }
 }
