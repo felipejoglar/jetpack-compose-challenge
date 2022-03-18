@@ -5,7 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.core.view.WindowCompat
 import com.fjoglar.composechallenge.mysoothe.ui.components.MySootheTemplate
-import com.fjoglar.composechallenge.mysoothe.ui.screens.LoginScreen
+import com.fjoglar.composechallenge.mysoothe.ui.screens.home.HomeScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +15,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             MySootheTemplate {
-                LoginScreen()
+                HomeScreen()
             }
         }
     }

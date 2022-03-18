@@ -9,4 +9,8 @@
     <string name="log_in_email_address_label">Email address</string>
     <string name="log_in_password_label">Password</string>
     <string name="log_in_no_account_label">Don\'t have an account? Sign up</string>
+
+    <!--  HOME SCREEN  -->
+    <string name="home_menu_home">Home</string>
+    <string name="home_menu_profile">Profile</string>
 </resources>
