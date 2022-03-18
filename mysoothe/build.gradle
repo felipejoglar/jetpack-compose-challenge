@@ -63,6 +63,8 @@ dependencies {
 
     implementation Libs.Coil.compose
 
+    implementation Libs.Google.Accompanist.systemUiController
+
     implementation Libs.AndroidX.Compose.ui
     implementation Libs.AndroidX.Compose.material
     implementation Libs.AndroidX.Compose.toolingPreview
