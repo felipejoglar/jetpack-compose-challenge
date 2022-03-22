@@ -1,8 +1,7 @@
-package com.fjoglar.composechallenge.mysoothe.ui.screens.home.components
+package com.fjoglar.composechallenge.bloom.ui.screens.home.components
 
 import android.content.res.Configuration
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.Icon
 import androidx.compose.material.icons.Icons
@@ -14,9 +13,9 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.fjoglar.composechallenge.mysoothe.R
-import com.fjoglar.composechallenge.mysoothe.ui.components.MySootheTemplate
-import com.fjoglar.composechallenge.mysoothe.ui.components.MySootheTextField
+import com.fjoglar.composechallenge.bloom.R
+import com.fjoglar.composechallenge.bloom.ui.components.BloomTemplate
+import com.fjoglar.composechallenge.bloom.ui.components.BloomTextField
 
 @Composable
 fun SearchTextField(
@@ -24,17 +23,11 @@ fun SearchTextField(
     onValueChange: (String) -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    MySootheTextField(
+    BloomTextField(
         value = value,
         onValueChange = onValueChange,
         placeholder = stringResource(R.string.home_search_label),
-        leadingIcon = {
-            Icon(
-                Icons.Default.Search,
-                contentDescription = null,
-                modifier = Modifier.size(18.dp)
-            )
-        },
+        leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
         keyboardOptions = KeyboardOptions(
             keyboardType = KeyboardType.Text,
             imeAction = ImeAction.Search,
@@ -53,7 +46,7 @@ fun SearchTextField(
 )
 @Composable
 private fun SearchTextFieldPreview() {
-    MySootheTemplate {
+    BloomTemplate {
         SearchTextField(
             value = "",
             onValueChange = {},
