@@ -1,6 +1,7 @@
 package com.fjoglar.composechallenge.mysoothe.ui.components
 
 import android.content.res.Configuration
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -21,7 +22,7 @@ fun MySootheTemplate(
 
         systemUiController.setStatusBarColor(
             color = Color.Transparent,
-            darkIcons = MaterialTheme.colors.isLight
+            darkIcons = !isSystemInDarkTheme()
         )
 
         Surface(

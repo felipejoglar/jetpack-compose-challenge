@@ -13,4 +13,8 @@
     <!--  HOME SCREEN  -->
     <string name="home_menu_home">Home</string>
     <string name="home_menu_profile">Profile</string>
+    <string name="home_search_label">Search</string>
+    <string name="home_favorite_collections_title">Favorite collections</string>
+    <string name="home_align_body_collections_title">Align your body</string>
+    <string name="home_align_mind_collections_title">Align your mind</string>
 </resources>
