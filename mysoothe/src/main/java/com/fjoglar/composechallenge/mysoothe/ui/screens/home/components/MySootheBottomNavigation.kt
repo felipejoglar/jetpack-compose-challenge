@@ -8,10 +8,6 @@ import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -22,10 +18,10 @@ import com.fjoglar.composechallenge.mysoothe.ui.screens.home.model.getMenuItems
 
 @Composable
 fun MySootheBottomNavigation(
-    items: List<BottomNavigationMenuItem> = getMenuItems()
+    items: List<BottomNavigationMenuItem> = getMenuItems(),
+    selectedItem: Int = 0,
+    onItemClick: (Int) -> Unit = { _ -> },
 ) {
-    var selectedItem by remember { mutableStateOf(0) }
-
     BottomNavigation(
         backgroundColor = MaterialTheme.colors.background,
         elevation = 16.dp,
@@ -36,7 +32,6 @@ fun MySootheBottomNavigation(
                     Icon(
                         imageVector = item.icon,
                         contentDescription = null,
-                        tint = MaterialTheme.colors.onBackground,
                         modifier = Modifier.size(18.dp),
                     )
                 },
@@ -48,7 +43,7 @@ fun MySootheBottomNavigation(
                     )
                 },
                 selected = selectedItem == index,
-                onClick = { selectedItem = index },
+                onClick = { onItemClick(index) },
             )
         }
     }
