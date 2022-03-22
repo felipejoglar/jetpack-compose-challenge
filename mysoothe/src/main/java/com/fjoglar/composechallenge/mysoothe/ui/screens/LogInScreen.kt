@@ -37,7 +37,7 @@ import com.fjoglar.composechallenge.mysoothe.ui.components.MySootheTemplate
 import com.fjoglar.composechallenge.mysoothe.ui.components.MySootheTextField
 import com.fjoglar.composechallenge.mysoothe.ui.components.UrlClickableText
 import com.fjoglar.composechallenge.mysoothe.ui.components.VerticalSpacer
-import java.util.*
+import java.util.Locale
 
 @Composable
 fun LoginScreen(
@@ -84,6 +84,7 @@ fun LoginScreen(
 
         MySootheButton(
             text = stringResource(id = R.string.log_in),
+            onClick = onLoginClick,
             modifier = Modifier
                 .padding(horizontal = 16.dp)
         )

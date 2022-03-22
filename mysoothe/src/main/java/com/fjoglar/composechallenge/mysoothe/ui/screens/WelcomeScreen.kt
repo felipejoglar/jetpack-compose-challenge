@@ -24,7 +24,9 @@ import com.fjoglar.composechallenge.mysoothe.ui.components.MySootheTemplate
 import com.fjoglar.composechallenge.mysoothe.ui.components.VerticalSpacer
 
 @Composable
-fun WelcomeScreen() {
+fun WelcomeScreen(
+    onLoginClick: () -> Unit = {}
+) {
     BackgroundImage()
     Box(
         contentAlignment = Alignment.Center,
@@ -46,6 +48,7 @@ fun WelcomeScreen() {
             MySootheButton(
                 text = stringResource(id = R.string.log_in),
                 color = MaterialTheme.colors.secondary,
+                onClick = onLoginClick,
                 modifier = Modifier.padding(horizontal = 16.dp)
             )
         }
