@@ -31,7 +31,7 @@ fun ThemeItem(
 ) {
     Card(
         shape = MaterialTheme.shapes.small,
-        backgroundColor = MaterialTheme.colors.background,
+        backgroundColor = MaterialTheme.colors.surface,
         modifier = modifier
             .size(136.dp),
     ) {

@@ -62,6 +62,7 @@ fun PlantItem(
             Divider(
                 thickness = 2.dp,
                 startIndent = 8.dp,
+                color = MaterialTheme.colors.surface,
                 modifier = Modifier
                     .align(Alignment.BottomCenter)
             )
