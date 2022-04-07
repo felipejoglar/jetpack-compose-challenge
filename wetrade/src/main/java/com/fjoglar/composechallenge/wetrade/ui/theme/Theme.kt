@@ -6,29 +6,26 @@ import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 
-private val DarkColorPalette = darkColors(
-    primary = Purple200,
-    primaryVariant = Purple700,
-    secondary = Teal200
+private val LightColorPalette = lightColors(
+    primary = Yellow,
+    background = Purple,
+    surface = White,
+    onPrimary = Gray900,
+    onBackground = White,
+    onSurface = Gray900,
 )
 
-private val LightColorPalette = lightColors(
-    primary = Purple500,
-    primaryVariant = Purple700,
-    secondary = Teal200
-
-    /* Other default colors to override
-    background = Color.White,
-    surface = Color.White,
-    onPrimary = Color.White,
-    onSecondary = Color.Black,
-    onBackground = Color.Black,
-    onSurface = Color.Black,
-    */
+private val DarkColorPalette = darkColors(
+    primary = Yellow,
+    background = Gray900,
+    surface = Gray700,
+    onPrimary = Gray900,
+    onBackground = White,
+    onSurface = White,
 )
 
 @Composable
-fun ComposeChallengeTheme(
+fun WeTradeTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
