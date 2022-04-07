@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 rootProject.name = "Compose Challenge"
 include ':bloom'
 include ':mysoothe'
+include ':wetrade'

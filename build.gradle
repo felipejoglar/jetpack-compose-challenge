@@ -2,6 +2,9 @@ import com.fjoglar.composechallenge.buildsrc.Libs
 
 buildscript {
 
+    ext {
+        compose_version = '1.0.1'
+    }
     repositories {
         google()
         mavenCentral()
@@ -10,6 +13,7 @@ buildscript {
     dependencies {
         classpath Libs.androidGradlePlugin
         classpath Libs.Kotlin.gradlePlugin
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.21'
     }
 }
 

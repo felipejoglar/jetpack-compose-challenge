@@ -33,6 +33,7 @@ This project will contain three [application modules](https://developer.android.
 
 1. [Bloom](https://github.com/fjoglar/jetpack-compose-challenge/tree/main/bloom)
 2. [MySoothe](https://github.com/fjoglar/jetpack-compose-challenge/tree/main/mysoothe)
+2. [WeTrade](https://github.com/fjoglar/jetpack-compose-challenge/tree/main/wetrade)
 
 # License
 ```
