@@ -1,20 +1,36 @@
 package com.fjoglar.composechallenge.wetrade.ui.components
 
 import android.content.res.Configuration
+import androidx.compose.foundation.layout.navigationBarsPadding
+import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import com.fjoglar.composechallenge.wetrade.ui.theme.WeTradeTheme
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 @Composable
 fun WeTradeTemplate(
+    statusBarDarkIcons: Boolean = false,
     content: @Composable () -> Unit,
 ) {
     WeTradeTheme {
+        val systemUiController = rememberSystemUiController()
+
+        systemUiController.setStatusBarColor(
+            color = Color.Transparent,
+            darkIcons = statusBarDarkIcons
+        )
+
         Surface(
-            color = MaterialTheme.colors.background
+            color = MaterialTheme.colors.background,
+            modifier = Modifier
+                .navigationBarsPadding()
+                .statusBarsPadding()
         ) {
             content()
         }
