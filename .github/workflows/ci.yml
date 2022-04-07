@@ -10,6 +10,8 @@ jobs:
     name: Bloom - Build
     runs-on: ubuntu-latest
 
+    timeout-minutes: 10
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -30,6 +32,8 @@ jobs:
     name: My Soothe - Build
     runs-on: ubuntu-latest
 
+    timeout-minutes: 10
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -49,6 +53,8 @@ jobs:
   wetrade:
     name: We Trade - Build
     runs-on: ubuntu-latest
+
+    timeout-minutes: 10
 
     steps:
       - name: Checkout
