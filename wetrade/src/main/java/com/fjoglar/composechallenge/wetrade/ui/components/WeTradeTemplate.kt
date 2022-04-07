@@ -2,7 +2,6 @@ package com.fjoglar.composechallenge.wetrade.ui.components
 
 import android.content.res.Configuration
 import androidx.compose.foundation.layout.navigationBarsPadding
-import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
@@ -30,7 +29,6 @@ fun WeTradeTemplate(
             color = MaterialTheme.colors.background,
             modifier = Modifier
                 .navigationBarsPadding()
-                .statusBarsPadding()
         ) {
             content()
         }
