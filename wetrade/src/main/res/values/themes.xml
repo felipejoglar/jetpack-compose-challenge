@@ -3,7 +3,7 @@
 
     <style name="Theme.WeTrade" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <item name="android:statusBarColor">@color/splash_background</item>
-        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowBackground">@drawable/splash_screen</item>
     </style>
 </resources>
