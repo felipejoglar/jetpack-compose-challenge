@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.core.view.WindowCompat
 import com.fjoglar.composechallenge.wetrade.ui.components.WeTradeTemplate
+import com.fjoglar.composechallenge.wetrade.ui.screens.WelcomeScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +20,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             WeTradeTemplate {
-                Greeting("Android")
+                WelcomeScreen()
             }
         }
     }

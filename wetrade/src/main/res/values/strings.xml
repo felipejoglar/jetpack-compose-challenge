@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">We Trade</string>
+
+    <!--  COMMON  -->
+    <string name="log_in">Log in</string>
+
+    <!--  WELCOME SCREEN  -->
+    <string name="welcome_get_started">Get started</string>
 </resources>
