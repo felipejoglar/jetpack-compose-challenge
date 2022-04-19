@@ -6,4 +6,9 @@
 
     <!--  WELCOME SCREEN  -->
     <string name="welcome_get_started">Get started</string>
+
+    <!--  LOG IN SCREEN  -->
+    <string name="login_title">Welcome back</string>
+    <string name="login_email_hint">Email address</string>
+    <string name="login_password_hint">Password</string>
 </resources>
