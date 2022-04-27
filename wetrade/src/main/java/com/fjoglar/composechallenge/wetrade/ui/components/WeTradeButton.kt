@@ -38,7 +38,7 @@ fun WeTradeButton(
     uiMode = Configuration.UI_MODE_NIGHT_YES,
 )
 @Composable
-private fun BloomButtonPreview() {
+private fun WeTradeButtonPreview() {
     WeTradeTemplate {
         WeTradeButton(
             text = "We Trade Button",

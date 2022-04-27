@@ -5,11 +5,14 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.OutlinedTextField
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.material.TextFieldDefaults
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.VisualTransformation
@@ -67,13 +70,41 @@ fun WeTradeTextField(
     showBackground = true,
 )
 @Composable
-private fun BloomTextFieldPreview() {
+private fun WeTradeTextFieldPreview() {
     WeTradeTheme {
         Surface(
-            color = MaterialTheme.colors.background
+            color = MaterialTheme.colors.surface
         ) {
             WeTradeTextField(
                 value = "",
+                onValueChange = {},
+                placeholder = "WeTradeTextField",
+                modifier = Modifier
+                    .padding(16.dp)
+            )
+        }
+    }
+}
+
+@Preview(
+    name = "Day Mode with Icon",
+    uiMode = Configuration.UI_MODE_NIGHT_NO,
+    showBackground = true,
+)
+@Preview(
+    name = "Night Mode with Icon",
+    uiMode = Configuration.UI_MODE_NIGHT_YES,
+    showBackground = true,
+)
+@Composable
+private fun WeTradeTextFieldWithIconPreview() {
+    WeTradeTheme {
+        Surface(
+            color = MaterialTheme.colors.surface
+        ) {
+            WeTradeTextField(
+                value = "",
+                leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
                 onValueChange = {},
                 placeholder = "WeTradeTextField",
                 modifier = Modifier
