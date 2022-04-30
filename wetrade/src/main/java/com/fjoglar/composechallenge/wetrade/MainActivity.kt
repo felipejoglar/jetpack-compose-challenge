@@ -5,8 +5,8 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.material.ExperimentalMaterialApi
 import androidx.core.view.WindowCompat
+import com.fjoglar.composechallenge.wetrade.navigation.WeTradeNavigation
 import com.fjoglar.composechallenge.wetrade.ui.components.WeTradeTemplate
-import com.fjoglar.composechallenge.wetrade.ui.screens.home.HomeScreen
 import com.fjoglar.composechallenge.wetrade.ui.screens.home.model.HomeScreenTab
 
 @ExperimentalMaterialApi
@@ -25,10 +25,7 @@ class MainActivity : ComponentActivity() {
                     HomeScreenTab.Profile,
                 )
 
-                HomeScreen(
-                    tabs = tabs,
-                    systemUiController = systemUiController
-                )
+                WeTradeNavigation(homeScreenTabs = tabs, systemUiController = systemUiController)
             }
         }
     }
