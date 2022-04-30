@@ -10,12 +10,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import com.fjoglar.composechallenge.wetrade.ui.screens.LoginScreen
 import com.fjoglar.composechallenge.wetrade.ui.theme.WeTradeTheme
+import com.google.accompanist.systemuicontroller.SystemUiController
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 @Composable
 fun WeTradeTemplate(
     statusBarDarkIcons: Boolean = false,
-    content: @Composable () -> Unit,
+    content: @Composable (SystemUiController) -> Unit,
 ) {
     WeTradeTheme {
         val systemUiController = rememberSystemUiController()
@@ -30,7 +31,7 @@ fun WeTradeTemplate(
             modifier = Modifier
                 .navigationBarsPadding()
         ) {
-            content()
+            content(systemUiController)
         }
     }
 }

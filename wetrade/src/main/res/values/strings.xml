@@ -11,4 +11,21 @@
     <string name="login_title">Welcome back</string>
     <string name="login_email_hint">Email address</string>
     <string name="login_password_hint">Password</string>
+
+    <!--  HOME SCREEN  -->
+    <string name="home_account_filter_week">Week</string>
+    <string name="home_account_filter_etfs">ETFs</string>
+    <string name="home_account_filter_stocks">Stocks</string>
+    <string name="home_account_filter_funds">Funds</string>
+    <string name="home_account_filter_crypto">Crypto</string>
+    <string name="home_account_filter_nfts">NFTs</string>
+    <string name="home_menu_account">Account</string>
+    <string name="home_menu_watchlist">Watchlist</string>
+    <string name="home_menu_profile">Profile</string>
+    <string name="home_account_balance">Balance</string>
+    <string name="home_account_total">$73,589.01</string>
+    <string name="home_account_today_diff">+412.35 today</string>
+    <string name="home_account_transact">Transact</string>
+    <string name="home_account_positions_title">Positions</string>
+
 </resources>
