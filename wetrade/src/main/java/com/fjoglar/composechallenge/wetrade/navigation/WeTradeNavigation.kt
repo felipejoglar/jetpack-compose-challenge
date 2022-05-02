@@ -21,10 +21,18 @@ fun WeTradeNavigation(
 
     NavHost(navController = navController, startDestination = "welcome") {
         composable("welcome") { WelcomeScreen { navController.navigate("login") } }
-        composable("login") { LoginScreen { navController.navigate("home") } }
-        composable("home") { HomeScreen(
-            tabs = homeScreenTabs,
-            systemUiController = systemUiController
-        ) }
+        composable("login") {
+            LoginScreen(onLoginClick = {
+                navController.navigate("home") {
+                    popUpTo("welcome") { inclusive = true }
+                }
+            })
+        }
+        composable("home") {
+            HomeScreen(
+                tabs = homeScreenTabs,
+                systemUiController = systemUiController
+            )
+        }
     }
 }
