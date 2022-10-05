@@ -33,13 +33,19 @@ This project will contain three [application modules](https://developer.android.
 
 1. [Bloom](https://github.com/fjoglar/jetpack-compose-challenge/tree/main/bloom)
 2. [MySoothe](https://github.com/fjoglar/jetpack-compose-challenge/tree/main/mysoothe)
-2. [WeTrade](https://github.com/fjoglar/jetpack-compose-challenge/tree/main/wetrade)
+3. [WeTrade](https://github.com/fjoglar/jetpack-compose-challenge/tree/main/wetrade)
+
+# Launch the app
+
+To launch one of the sample apps you just need to select the desired application in the configurations dropdown menu and hit the run ▶️ button.
+
+![launch_applications](https://raw.githubusercontent.com/fjoglar/jetpack-compose-challenge/assets/launch-app.png)
 
 # License
 ```
 MIT License
 
-Copyright (c) 2021 Felipe Joglar
+Copyright (c) 2021-2022 Felipe Joglar
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
