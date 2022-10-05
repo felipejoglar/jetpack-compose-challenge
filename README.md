@@ -39,7 +39,7 @@ This project will contain three [application modules](https://developer.android.
 
 To launch one of the sample apps you just need to select the desired application in the configurations dropdown menu and hit the run ▶️ button.
 
-![launch_applications](https://raw.githubusercontent.com/felipejoglar/jetpack-compose-challenge/assets/launch-app.png)
+![launch_applications](https://raw.githubusercontent.com/felipejoglar/jetpack-compose-challenge/main/assets/launch-app.png)
 
 # License
 ```
